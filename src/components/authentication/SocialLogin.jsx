@@ -15,7 +15,7 @@ const SocialLogin = () => {
                     email: result.user?.email,
                     name: result.user?.displayName,
                 }
-                axios.post('https://bistro-boss-restaurant-server-nu.vercel.app/users', userInfo)
+                axios.post('https://bistro-boss-restuarant-server.onrender.com/users', userInfo)
                     .then(res => {
 
                         console.log(res.data)

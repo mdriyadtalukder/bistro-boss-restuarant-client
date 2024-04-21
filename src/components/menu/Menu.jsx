@@ -16,7 +16,7 @@ const Menu = () => {
     const [item3, setItem3] = useState([]);
     const [item4, setItem4] = useState([]);
     useEffect(() => {
-        fetch('https://bistro-boss-restaurant-server-nu.vercel.app/menu')
+        fetch('https://bistro-boss-restuarant-server.onrender.com/menu')
             .then(res => res.json())
             .then(data => {
                 const popular = data.filter(d => d.category === "dessert");
